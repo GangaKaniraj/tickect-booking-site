@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <link rel="stylesheet" href="./styles.css">
 <body>
     <header>
-        <ul>
-        <img class="bms" src="./bookmyshow.png" width="70px" alt="logo"></img>
+        <div class="logo"><img class="logo" src="./logo.png" alt="logo"></img>
+        </div>
+        <div class="search">
         <label for="search"></label>
-        <input type="text" name="search" id="search" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+        <input type="text" name="search" id="search" placeholder="Search for Movies, Events, Plays, comedy, Sports and Activities">
+        <button class="lens" type="submit"><i class="fa fa-search-plus" aria-hidden="true" ></i></button>
+        </div>
+        <div class="country">
         <label for="city"></label>
-        <select name="country" id="Country">
+        <select class="country" name="country" id="Country">
             <option value="Australia">Australia</option>
             <option value="America">America</option>
             <option value="Algeria">Algeria</option>
@@ -33,53 +38,97 @@
             <option value="Libya">Libya</option>
             <option value="Mexico">Mexico</option>
         </select>
-        <input type="button" value="Sign in" id="signin">
+        </div>
+        <div class="signin">
+        <button type="button" id="signin">Sign in</button>
+        </div>
+        <div class="menu">
         <a href="/google.com"><img src="./menu.png" alt="Menu" width="40px"></a>
-    </ul>
+        </div>
     </header>
+    <br><br>
     <main>
-        <h1>The Best of Entertainment</h1>
+        <h1><b>Best of Entertainment</b></h1>
         <section class="ent">
-            <div class="ws">
-                <a href="/google'com"><img src="./workshops.png" alt="workshops"></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google'com"><img src="./Image/Aan Devadai.jpg" width="250px" alt="Aan Devadai"></a>
+                </div>
+                <p><b>Aan Devadai</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="fit">
-                <a href="/google.com"><img src="./fitness.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Aram.jpg" width="250px" alt="Aram"></a>
+                </div>
+                <p><b>Aram</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="kid">
-                <a href="/google.com"><img src="./kids.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Basker.jpg" width="250px" alt="Basker"></a>
+                </div>
+                <p><b>Basker</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="cmd">
-                <a href="/google.com"><img src="./comedy.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Blue Whale.jpg" width="250px" alt="Blue Whale"></a>
+                </div>
+                <p><b>Blue Whale</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="music">
-                <a href="/google.com"><img src="./music.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Circus.jpg" width="250px" alt="Circus"></a>
+                </div>
+                <p><b>Circus</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
         </section>
-        <h1>Online Streaming Events</h1>
+        <h1><b>Family Fun</b></h1>
         <section class="ent">
-            <div class="ws">
-                <a href="/google'com"><img src="./workshops.png" alt="workshops"></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google'com"><img src="./Image/DPrabhu.jpg" width="250px" alt="Dharala Prabhu"></a>
+                </div>
+                <p><b>Dharala Prabhu</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="fit">
-                <a href="/google.com"><img src="./fitness.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Mandaela.jpg" width="250px" alt="Mandaela"></a>
+                </div>
+                <p><b>Mandaela</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="kid">
-                <a href="/google.com"><img src="./kids.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Soorar.jpeg" width="250px" alt="Soorarai Potru"></a>
+                </div>
+                <p><b>Soorarai Potru</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="cmd">
-                <a href="/google.com"><img src="./comedy.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Super30.png" width="250px" alt="Super 30"></a>
+                </div>
+                <p><b>Super 30</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
-            <div class="music">
-                <a href="/google.com"><img src="./music.png" alt=""></a>
+            <div class="card">
+                <div class="m-img">
+                <a class="mi" href="/google.com"><img src="./Image/Vaanam.jpg" width="250px" alt="Vaanam"></a>
+                </div>
+                <p><b>Vaanam</b></p>
+                <button type="submit" class="book">Book Now</button>
             </div>
         </section>
     </main>
+    <br><br><br><br><br><br><br><br>
     <footer>
-        <ul>
-            <img src="./bookmyshow.png" alt="logo" width="80px">
+            <img src="./logo.png" alt="logo" width="80px">
             <h3>&copy; 2021, All Rights Reserved.</h3>
-        </ul>
     </footer>
 </body>
 </html>
