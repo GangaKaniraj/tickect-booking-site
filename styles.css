@@ -1,0 +1,33 @@
+/* reset css */ 
+body  {
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: rgb(117, 68, 165);
+}
+.bms {
+    margin: 0;
+}
+a img {
+    margin-right: 1px;
+}
+#search, #country, #signin {
+    padding-bottom: 5px;
+}
+.ent {
+    display: flex;
+    padding: 8px;
+}
+.ws img {
+    width: 60pxl;
+}
+footer {
+    align-items: center;
+    display: flex;
+    background-color: rgb(114, 110, 110);
+}
