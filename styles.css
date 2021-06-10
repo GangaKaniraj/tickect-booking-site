@@ -24,11 +24,11 @@ footer img {
     width: 150px;
 }
 .logo {
-    width: 15%;
+    width: 20%;
     margin: 11px;
 }
 .search {
-    width: 60%;
+    width: 50%;
 }
 .lens {
     padding: .65rem;
@@ -94,6 +94,9 @@ h1 {
     padding: 40px;
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+    header, main, footer {
+        flex-wrap: wrap;
+    }
     .ent {
         width: 100%;
         margin: 2rem;
@@ -103,8 +106,6 @@ h1 {
         justify-content: space-around;
         
     }    
-}
-@media only screen and (min-width: 500px) and (max-width: 800px) {
     h1 {
         margin: 3rem;
         margin-left: 3rem;
@@ -113,8 +114,6 @@ h1 {
         align-items: center;
         justify-content: center;
     }
-}
-@media only screen and (min-width: 500px) and (max-width: 800px) {
     header, footer {
         width: 100%;
         margin: 1rem;
@@ -122,10 +121,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
-    }    
-}
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+    }   
     .search {
         width: 50%;
     }
@@ -144,18 +140,14 @@ h1 {
         padding-right: 90px;
     }
 }
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
     .ent {
-        width: 100%;
-        margin: 2rem;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     header, footer {
         width: 100%;
-        margin: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -165,7 +157,6 @@ h1 {
         padding-right: 250px;
     }
     h1 {
-        display: flex;
         align-items: center;
         text-align: center;
     }
