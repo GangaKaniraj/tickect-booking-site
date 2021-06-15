@@ -45,6 +45,7 @@ footer img {
     color: red;
     font-weight: bolder;
     cursor: pointer;
+    background-color: aqua;
 }
 .menu {
     width:5%;
