@@ -1,18 +1,17 @@
 /* reset css */ 
-* {
-    box-sizing: border-box;
-}
 body  {
     margin: 0;
     padding: 0;
     background-color: rgb(221, 196, 247);
 }
 header, footer {
+    width: 100%;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(117, 68, 165);
+    position: fixed;
 }
 main {
     flex-wrap: wrap;
@@ -28,7 +27,7 @@ footer img {
     margin: 11px;
 }
 .search {
-    width: 50%;
+   width: 50%;
 }
 .lens {
     padding: .65rem;
@@ -41,7 +40,6 @@ footer img {
 }
 #signin {
     padding: 10px;
-    border-radius: 10px;
     color: red;
     font-weight: bolder;
     cursor: pointer;
@@ -49,6 +47,16 @@ footer img {
 }
 .menu {
     width:5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.m-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 #search {
     padding: 10px;
@@ -94,28 +102,44 @@ footer img {
 h1 {
     padding: 40px;
 }
-@media only screen and (min-width: 500px) and (max-width: 800px) {
-    header, main, footer {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+    main, footer {
         flex-wrap: wrap;
     }
+    header {
+        height: 90px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }   
+    header {
+        position: fixed;
+    }
+    .search {
+        display: none !important;
+    }
+    .country {
+        display: none !important;
+    }
+    .signin {
+        display: none !important;
+    }
+    
     .ent {
         width: 100%;
-        margin: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        
+        justify-content: space-around;  
     }    
     h1 {
-        margin: 3rem;
-        margin-left: 3rem;
-        padding: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    header, footer {
+    footer {
+        position: absolute;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -128,6 +152,8 @@ h1 {
     .logo {
         padding: 0;
         margin-left: 0;
+        align-items: center;
+        justify-content: center;
     }
     #search {
         padding-right: 12px;
